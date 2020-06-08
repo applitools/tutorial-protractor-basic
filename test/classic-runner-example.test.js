@@ -20,7 +20,7 @@ describe('DemoApp - ClassicRunner', function () {
     const conf = new Configuration()
 
     // You can get your api key from the Applitools dashboard
-    // conf.setApiKey('APPLITOOLS_API_KEY')
+    conf.setApiKey('APPLITOOLS_API_KEY')
 
     // set new batch
     conf.setBatch(new BatchInfo("Demo batch"));

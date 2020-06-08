@@ -14,7 +14,7 @@ describe('DemoApp - Original', function () {
     eyes = new Eyes();
 
     // Add your API key (the API key can be set via APPLITOOLS_API_KEY env variable)
-    // eyes.setApiKey('APPLITOOLS_API_KEY'); // 👈🏼 REPLACE ME!
+    eyes.setApiKey('APPLITOOLS_API_KEY'); // 👈🏼 REPLACE ME!
 
     // set new batch
     eyes.setBatch(new BatchInfo('Demo batch'))
