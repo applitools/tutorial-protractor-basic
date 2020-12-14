@@ -1,3 +1,5 @@
+# Applitools Tutorial - Protractor
+
 ### Pre-requisites
 
 1. Install Node.js from [here](https://nodejs.org/en/)
@@ -7,9 +9,9 @@
 3. If the bundled ChromeDriver isn't compatible with the version of Chrome installed on your machine, then please download the correct ChromeDriver version from the [ChromeDriver downloads page](https://ChromeDriver.chromium.org/downloads). Here are some additional resources from the internet that'll help you:
    * https://splinter.readthedocs.io/en/0.1/setup-chrome.html
    * https://stackoverflow.com/questions/38081021/using-selenium-on-mac-chrome
-   * https://www.youtube.com/watch?time_continue=182&v=dz59GsdvUF8  
+   * https://www.youtube.com/watch?time_continue=182&v=dz59GsdvUF8
 
-### Running the example
+## Run the Example Project
 
 1. Download the example
     * Option 1: `git clone https://github.com/applitools/tutorial-protractor-basic.git`
@@ -17,10 +19,11 @@
 2. CD into the `tutorial-protractor-basic` folder
 3. Change the `APPLITOOLS_API_KEY` with your own.
     * Login to Applitools > Click on the Person icon > My API Key
+    * Update `APPLITOOLS_API_KEY` inside of each test file
 4. run `npm install`
 5. run `npm test`
 
-### Adding to an existing Node.js example
+## Add Applitools Eyes to an Existing Node.js Project
 
 ```sh
 npm install "@applitools/eyes-protractor" --save-dev
