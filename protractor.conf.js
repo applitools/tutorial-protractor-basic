@@ -2,9 +2,10 @@
 
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
+const hostname = (process.env.CI === 'true') ? 'selenium' : 'localhost';
 
 exports.config = {
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumAddress: `http://${hostname}:4444/wd/hub`,
   suites: {
     default: 'test/*.test.js'
   },

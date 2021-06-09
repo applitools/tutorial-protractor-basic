@@ -14,7 +14,7 @@ describe('DemoApp - Original', function () {
     eyes = new Eyes();
 
     // Add your API key (the API key can be set via APPLITOOLS_API_KEY env variable)
-    eyes.setApiKey('APPLITOOLS_API_KEY'); // 👈🏼 REPLACE ME!
+    eyes.setApiKey(process.env.APPLITOOLS_API_KEY); // 👈🏼 REPLACE ME!
 
     // set new batch
     eyes.setBatch(new BatchInfo('Demo batch'))
@@ -22,7 +22,7 @@ describe('DemoApp - Original', function () {
 
   it('Smoke Test', async () => {
     // Start the test and set the App name, the Test name and the browser's viewport size to 800x600.
-    await eyes.open(browser, 'Demo App', 'Smoke Test', new RectangleSize(800, 600));
+    await eyes.open(browser, 'Demo App - Protractor', 'Smoke Test', new RectangleSize(800, 600));
 
     // Navigate the browser to the "ACME" demo app.
     browser.get("https://demo.applitools.com");
@@ -46,6 +46,6 @@ describe('DemoApp - Original', function () {
 
   afterEach(async () => {
     // If the test was aborted before eyes.close was called, ends the test as aborted.
-    await eyes.abortIfNotClosed();
+    await eyes.abort();
   });
 });
