@@ -23,7 +23,7 @@ describe('DemoApp - ClassicRunner', function () {
     conf.setApiKey(process.env.APPLITOOLS_API_KEY)
 
     // set new batch
-    conf.setBatch(new BatchInfo("Demo batch"));
+    conf.setBatch(new BatchInfo("Demo Batch - Protractor - Classic"));
 
     // set the configuration to eyes
     eyes.setConfiguration(conf)
@@ -31,7 +31,7 @@ describe('DemoApp - ClassicRunner', function () {
 
   it('Smoke Test', async () => {
     // Start the test by setting AUT's name, test name and viewport size (width X height)
-    await eyes.open(browser, 'Demo App - Protractor', 'Smoke Test', new RectangleSize(800, 600));
+    await eyes.open(browser, 'Demo App - Protractor - Classic', 'Smoke Test - Protractor - Classic', new RectangleSize(800, 600));
 
     // Navigate the browser to the "ACME" demo app.
     browser.get("https://demo.applitools.com");
