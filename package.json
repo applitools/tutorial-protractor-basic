@@ -15,7 +15,7 @@
     "url": "https://github.com/applitools/tutorial-protractor-basic/issues"
   },
   "dependencies": {
-    "@applitools/eyes-protractor": "1.17.1",
+    "@applitools/eyes-protractor": "1.17.2",
     "mocha": "^6.2.3",
     "protractor": "^7.0.0"
   },
